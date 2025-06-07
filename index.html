@@ -219,7 +219,7 @@
       item.id = docSnap.id;
       fullCatalog.push(item);
     });
-    fullCatalog.sort((a, b) => a.name.localeCompare(b.name));
+    fullCatalog.sort((a, b) => a.name.localeCompare(b.code));
     renderCatalog();
     if (currentUser) renderCollection();
     updateProgressBar();
